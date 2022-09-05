@@ -11,20 +11,32 @@ body {
   color: #fff;
   display: flex;
   /* flex-wrap: wrap; */
+  align-items: center;
+  justify-content: center;
   height: 100vh;
-  padding-left: 100px;
-  padding-top: 100px;
+  /* padding-left: 100px; */
+  /* padding-top: 100px; */
   gap: 2rem;
 }
 .tracker-cards {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
-  flex-direction: row;
-  gap: 2rem;
+  grid-template-rows: 100px 100px;
+  column-gap: 3rem;
+  row-gap: 5rem;
 }
 .tracker-card {
-  height: 200px;
+  height: max-content;
 }
+
+.tracker-card .icon {
+  transition: 200ms ease-out transform;
+}
+
+.tracker-card:hover .icon {
+  transform: rotateZ(-45deg) scale(1.4);
+}
+
 .image {
   width: 40px;
   height: 40px;
