@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Rubik;
+}
+.container {
+  background-color: hsl(226, 43%, 10%);
+  color: #fff;
+  display: flex;
+  /* flex-wrap: wrap; */
+  height: 100vh;
+  padding-left: 100px;
+  padding-top: 100px;
+  gap: 2rem;
+}
+.tracker-cards {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  flex-direction: row;
+  gap: 2rem;
+}
+.tracker-card {
+  height: 200px;
+}
+.image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border: solid 2px #fff;
+  border-radius: 50%;
+}
+.picture {
+  padding-bottom: 20px;
+}
+.profile {
+  padding: 20px 0 180px 15px;
+  background-color: hsl(246, 80%, 60%);
+  height: 150px;
+  width: 200px;
+  border-radius: 10px;
+}
+.period-box {
+  padding: 15px 0 0 15px;
+  background-color: hsl(235, 46%, 20%);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  height: 80px;
+  font-size: x-small;
+  flex-direction: column;
+  gap: 0.5rem;
+  display: flex;
+  color: hsl(235, 45%, 61%);
+}
+.active {
+  color: #fff;
+}
+.icon {
+  height: 40px;
+}
+.up {
+  height: 40px;
+  width: 180px;
+  display: flex;
+  justify-content: flex-end;
+  object-fit: contain;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+.down {
+  height: 100px;
+  width: 180px;
+  border-radius: 10px;
+  background-color: hsl(235, 46%, 20%);
+  padding: 10px 15px 15px 15px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+.one {
+  background-color: hsl(15, 100%, 70%);
+}
+.two {
+  background-color: hsl(195, 74%, 62%);
+}
+.three {
+  background-color: hsl(348, 100%, 68%);
+}
+.four {
+  background-color: hsl(145, 58%, 55%);
+}
+.five {
+  background-color: hsl(264, 64%, 52%);
+}
+.six {
+  background-color: hsl(43, 84%, 65%);
+}
+.small-letters {
+  font-size: x-small;
+  color: hsl(236, 100%, 87%);
+  font-weight: 400;
+}
+.big-letters {
+  font-size: x-large;
+  padding-bottom: 5px;
+}
+.period:hover {
+  color: #fff;
+  cursor: pointer;
+}
+i:hover {
+  cursor: pointer;
+}
+.down:hover {
+  background-color: hsl(235, 40%, 33%);
+  cursor: pointer;
+}
