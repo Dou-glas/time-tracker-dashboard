@@ -22,11 +22,14 @@ body {
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 100px 100px;
-  column-gap: 3rem;
-  row-gap: 5rem;
+  column-gap: 2rem;
+  row-gap: 4rem;
 }
 .tracker-card {
-  height: max-content;
+  /* height: max-content; */
+  height: 100px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .tracker-card .icon {
@@ -48,23 +51,31 @@ body {
   padding-bottom: 20px;
 }
 .profile {
-  padding: 20px 0 180px 15px;
+  padding: 20px 0 190px 15px;
   background-color: hsl(246, 80%, 60%);
   height: 150px;
-  width: 200px;
+  width: 150px;
   border-radius: 10px;
+}
+.page {
+  background-color: hsl(235, 46%, 20%);
+  margin-top: 40px;
+  height: 320px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 .period-box {
   padding: 15px 0 0 15px;
-  background-color: hsl(235, 46%, 20%);
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+  /* background-color: hsl(235, 46%, 20%); */
   height: 80px;
   font-size: x-small;
   flex-direction: column;
   gap: 0.5rem;
   display: flex;
   color: hsl(235, 45%, 61%);
+}
+.period {
+  padding-bottom: 10px;
 }
 .active {
   color: #fff;
@@ -78,8 +89,6 @@ body {
   display: flex;
   justify-content: flex-end;
   object-fit: contain;
-  border-top-right-radius: 10px;
-  border-top-left-radius: 10px;
 }
 .down {
   height: 100px;
