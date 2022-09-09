@@ -131,6 +131,16 @@ body {
   font-size: x-large;
   padding-bottom: 5px;
 }
+.footer {
+  text-align: center;
+  font-size: 0.813rem;
+  color: #a6a6a6;
+  margin-bottom: 1rem;
+}
+.link {
+  text-decoration: none;
+  color: #a6a6a6;
+}
 .period:hover {
   color: #fff;
   cursor: pointer;
